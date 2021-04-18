@@ -39,7 +39,7 @@ public class UserController {
      * @return page
      */
     @GetMapping("/getListByPage")
-    public IPage<User> getListByPage(@RequestParam(value = "pageNum",defaultValue = "0")int pageNum,
+    public IPage<User> getListByPage(@RequestParam(value = "pageNum",defaultValue = "1")int pageNum,
                                      @RequestParam(value = "pageSize",defaultValue = "2")int pageSize,
                                      @RequestParam(value = "name",required = true)String name,
                                      @RequestParam(value = "age",required = true)int age){
